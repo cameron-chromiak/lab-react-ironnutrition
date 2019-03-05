@@ -11,7 +11,6 @@ class FoodBox extends Component {
  showFoods = () => {
    let listItems = this.state.foods.map((item,i) => {
      return (
-       // <button className="addButton"></button>
        <div className="box">
          <article className="media">
            <div className="media-left">
