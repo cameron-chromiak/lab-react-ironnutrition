@@ -11,6 +11,7 @@ class FoodBox extends Component {
  showFoods = () => {
    let listItems = this.state.foods.map((item,i) => {
      return (
+       // <button className="addButton"></button>
        <div className="box">
          <article className="media">
            <div className="media-left">
@@ -22,7 +23,7 @@ class FoodBox extends Component {
              <div className="content">
                <p>
                  <strong>{item.name}</strong> <br />
-                 <small></small>
+                 <small>{item.calories} cal</small>
                </p>
              </div>
            </div>
@@ -45,10 +46,8 @@ class FoodBox extends Component {
          </article>
        </div>
       )
-      }
-     )
-
-
+    }
+  )
    return listItems
  }
 
